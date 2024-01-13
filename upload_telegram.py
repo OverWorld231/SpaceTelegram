@@ -6,7 +6,7 @@ import time
 
 def main():
     tg_token = os.environ['TG_TOKEN']
-    chat_id = os.environ['CHAT_ID']
+    chat_id = os.environ['TG_CHAT_ID']
     bot = telegram.Bot(token=tg_token)
     
     while True:
