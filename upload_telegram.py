@@ -16,7 +16,7 @@ def main():
             files_path = os.path.join("images",file)
             with open(files_path,"rb") as f:
                 bot.send_document(chat_id=chat_id, document=f)
-                time.sleep(secs=14400)
+            time.sleep(secs=14400)
 
 
 if __name__ == "__main__":
