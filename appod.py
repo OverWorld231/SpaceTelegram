@@ -10,7 +10,7 @@ def extract_link(url):
   file_name, extansion = file_extension
   return extansion, file_name
 def download_apod():
-  api_key = os.environ['API_KEY']
+  api_key = os.environ['NASA_API_KEY']
   apod_url = "https://api.nasa.gov/planetary/apod"
   params = {"api_key":api_key,"count": 30}
   response = requests.get(apod_url,params=params)
