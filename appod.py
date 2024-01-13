@@ -4,7 +4,7 @@ from download import download_image
 from urllib.parse import urlparse, unquote
 
 
-def extract_link(url):
+def extract_extension_from_link(url):
     decoded_url = unquote(url)
     parsed_url = urlparse(decoded_url)
     path, full_name = os.path.split(parsed_url.path)
@@ -26,7 +26,7 @@ def download_apod(api_key):
                 apod_link_image = apod_image["hdurl"]
             else:
                 apod_link_image = apod_image["url"]
-            extention, filename = extract_link(apod_link_image)
+            extention, filename = extract_extension_from_link(apod_link_image)
             path_image = os.path.join("images", f"{filename}{extention}")
             download_image(apod_link_image, path_image)
 
