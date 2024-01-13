@@ -43,6 +43,8 @@ API_KEY = EIAPgBYNCgsziyz92N8QvB88dnCYNb9h3l9KbPfc
 Для скачивания NasaEpic картинок необоходимо написать команнду в таком формате:
 `python epic.py`
 
+Для скачивания SpaceX картинок необоходимо написать команнду в таком формате:
+`python fetch_spacex_image.py`
 
 
 
