@@ -18,6 +18,7 @@ def download_apod(api_key):
     count = 30
     params = {"api_key": api_key, "count": count}
     response = requests.get(apod_url, params=params)
+    response.raise_for_status()
     apod_images = response.json()
     for apod_image in apod_images:
         if apod_image.get("media_type") == "image":
