@@ -4,7 +4,7 @@ import os
 from download import download_image 
 def earth_images():
   epic_link = "https://api.nasa.gov/EPIC/api/natural"
-  api_key = os.environ['API_KEY']
+  api_key = os.environ['NASA_API_KEY']
   params = {"api_key":api_key,"count": 5}
   response = requests.get(epic_link,params=params)
   earth_url = response.json()
