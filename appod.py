@@ -15,7 +15,8 @@ def extract_link(url):
 
 def download_apod(api_key):
     apod_url = "https://api.nasa.gov/planetary/apod"
-    params = {"api_key": api_key, "count": 30}
+    count = 30
+    params = {"api_key": api_key, "count": count}
     response = requests.get(apod_url, params=params)
     apod_images = response.json()
     for apod_image in apod_images:
