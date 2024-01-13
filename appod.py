@@ -23,12 +23,12 @@ def download_apod(api_key):
     for apod_image in apod_images:
         if apod_image.get("media_type") == "image":
             if apod_image.get("hdurl"):
-                apod_link_image = apod_image["hdurl"]
+                apod_image_link = apod_image["hdurl"]
             else:
-                apod_link_image = apod_image["url"]
-            extention, filename = extract_extension_from_link(apod_link_image)
+                apod_image_link = apod_image["url"]
+            extention, filename = extract_extension_from_link(apod_image_link)
             path_image = os.path.join("images", f"{filename}{extention}")
-            download_image(apod_link_image, path_image)
+            download_image(apod_image_link, path_image)
 
 
 def main():
