@@ -7,16 +7,16 @@
 ```
 TG_TOKEN=6574225305:AAG8cCjC0JOteIEl2P473zxFKKSyI_NTSPY
 
-CHAT_ID =@spacexnotoriginal
+TG_CHAT_ID=@spacexnotoriginal
 
-API_KEY = EIAPgBYNCgsziyz92N8QvB88dnCYNb9h3l9KbPfc
+NASA_API_KEY=EIAPgBYNCgsziyz92N8QvB88dnCYNb9h3l9KbPfc
 ```
 
 `TG_TOKEN` Вы можете получить у бота в Тelegram по поиску @BotFather и создать там бота после чего бот выдаст вам токен.
 
-`СHAT_ID` Находится в настройках вашего Telegram канала по желанию можно поставить своё.
+`TG_СHAT_ID` Находится в настройках вашего Telegram канала по желанию можно поставить своё.
 
-`API_KEY` Получается на сайте https://api.nasa.gov/
+`NASA_API_KEY` Получается на сайте https://api.nasa.gov/
 
 
  
