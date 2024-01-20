@@ -4,7 +4,7 @@ import os
 from download import download_image
 
 
-def earth_images(api_key):
+def load_earth_images(api_key):
     epic_link = "https://api.nasa.gov/EPIC/api/natural"
     count = 5
     params = {"api_key": api_key, "count": count}
@@ -23,7 +23,7 @@ def earth_images(api_key):
 
 def main():
     api_key = os.environ['NASA_API_KEY']
-    earth_images(api_key)
+    load_earth_images(api_key)
 
 
 if __name__ == "__main__":
