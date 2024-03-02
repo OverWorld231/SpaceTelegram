@@ -10,9 +10,9 @@ def load_earth_images(api_key):
     params = {"api_key": api_key, "count": count}
     response = requests.get(epic_link, params=params)
     response.raise_for_status()
-    earth_img = response.json()
-    for epic_img in earth_img:
-        epic_date = epic_img["date"]
+    earth_imges = response.json()
+    for epic_imges in earth_imges:
+        epic_date = epic_imges["date"]
         epic_date = datetime.datetime.fromisoformat(epic_date).strftime(
             "%Y/%m/%d")
         epic_name = epic_img["image"]
